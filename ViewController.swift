@@ -20,6 +20,12 @@ class TableViewController: UITableViewController {
         self.tableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.destination is DetailsTableViewCell {
+//            
+//        }
+//    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainArray.count
     }
@@ -32,6 +38,11 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedIndex = indexPath.row
+        performSegue(withIdentifier: "showDetails", sender: selectedIndex)
     }
 }
 
