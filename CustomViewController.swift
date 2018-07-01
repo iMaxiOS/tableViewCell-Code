@@ -14,12 +14,20 @@ class CustomViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageView.image = details.mainImageView.image
+        textLabel.text = details.mainLabel.text
         method()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        textView.contentOffset = CGPoint(x: -40.0, y: -40.0)
     }
     
     func method() {

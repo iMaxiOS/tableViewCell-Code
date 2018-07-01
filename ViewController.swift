@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     var details = DetailsTableViewCell()
     var mainArray = [String]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,14 +23,16 @@ class TableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? CustomViewController {
-           destination.imageView = details.mainImageView
+            destination.imageView = details.mainImageView
+            destination.textLabel = details.mainLabel
+            //create label
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainArray.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! DetailsTableViewCell
         
