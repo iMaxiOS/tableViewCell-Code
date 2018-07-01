@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    var details = DetailsTableViewCell()
     var mainArray = [String]()
 
     override func viewDidLoad() {
@@ -20,11 +21,11 @@ class TableViewController: UITableViewController {
         self.tableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.destination is DetailsTableViewCell {
-//            
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? CustomViewController {
+           destination.imageView = details.mainImageView
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainArray.count

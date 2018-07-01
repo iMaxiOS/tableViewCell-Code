@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="53a-uy-cFQ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,12 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Music-->
         <scene sceneID="ZqB-BV-Zwj">
             <objects>
                 <tableViewController id="fyA-KY-61P" customClass="TableViewController" customModule="TableViewCell___Code" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dru-uh-SWh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IKJ-Zv-OJ1" id="yD1-VE-w30">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="fyA-KY-61P" id="VkU-8E-wpD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xV1-rH-3C0"/>
+                    <navigationItem key="navigationItem" title="Music" id="xV1-rH-3C0"/>
                     <connections>
                         <segue destination="h5L-bU-Ee0" kind="show" identifier="showDetails" id="jak-A7-Yo7"/>
                     </connections>
@@ -47,31 +47,31 @@
             <objects>
                 <viewController id="h5L-bU-Ee0" customClass="CustomViewController" customModule="TableViewCell___Code" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fzR-1m-Mma">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ldM-gC-Zr8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-k8-6NV">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vBK-Ti-DyB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IEF-fi-oYz">
-                                            <rect key="frame" x="8" y="275" width="359" height="320"/>
+                                            <rect key="frame" x="8" y="275" width="359" height="424"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <mutableString key="text">Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles or types of music may emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and vocal techniques ranging from singing to rapping; there are solely instrumental pieces, solely vocal pieces (such as songs without instrumental accompaniment) and pieces that combine singing and instruments. The word derives from Greek μουσική (mousike; "art of the Muses").[1] See glossary of musical terminology.
+                                            <string key="text">Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles or types of music may emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and vocal techniques ranging from singing to rapping; there are solely instrumental pieces, solely vocal pieces (such as songs without instrumental accompaniment) and pieces that combine singing and instruments. The word derives from Greek μουσική (mousike; "art of the Muses").[1] See glossary of musical terminology.
 
 In its most general form, the activities describing music as an art form or cultural activity include the creation of works of music (songs, tunes, symphonies, and so on), the criticism of music, the study of the history of music, and the aesthetic examination of music. Ancient Greek and Indian philosophers defined music as tones ordered horizontally as melodies and vertically as harmonies. Common sayings such as "the harmony of the spheres" and "it is music to my ears" point to the notion that music is often ordered and pleasant to listen to. However, 20th-century composer John Cage thought that any sound can be music, saying, for example, "There is no noise, only sound."[2]
 
-The creation, performance, significance, and even the definition of music vary according to culture and social context. Indeed, throughout history, some new forms or styles of music have been criticized as "not being music", including Beethoven's Grosse Fuge string quartet in 1825,[3] early jazz in the beginning of the 1900s[4] and hardcore punk in the 1980s.[5] There are many types of music, including popular music, traditional music, art music, music written for religious ceremonies and work songs such as chanteys. Music ranges from strictly organized compositions–such as Classical music symphonies from the 1700s and 1800s, through to spontaneously played </mutableString>
+The creation, performance, significance, and even the definition of music vary according to culture and social context. Indeed, throughout history, some new forms or styles of music have been criticized as "not being music", including Beethoven's Grosse Fuge string quartet in 1825,[3] early jazz in the beginning of the 1900s[4] and hardcore punk in the 1980s.[5] There are many types of music, including popular music, traditional music, art music, music written for religious ceremonies and work songs such as chanteys. Music ranges from strictly organized compositions–such as Classical music symphonies from the 1700s and 1800s, through to spontaneously played </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="nAo-Ay-Vvr">
-                                            <rect key="frame" x="67.5" y="27" width="240" height="240"/>
+                                            <rect key="frame" x="67.666666666666686" y="27" width="240" height="240"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="MYU-PY-RMF"/>
                                                 <constraint firstAttribute="width" constant="240" id="qFZ-0f-f4U"/>
@@ -102,7 +102,7 @@ The creation, performance, significance, and even the definition of music vary a
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="IEF-fi-oYz" firstAttribute="top" secondItem="vBK-Ti-DyB" secondAttribute="top" constant="8" id="EJC-kZ-Ie1"/>
-                                        <constraint firstAttribute="bottom" secondItem="IEF-fi-oYz" secondAttribute="bottom" constant="8" id="EcJ-hi-i3a"/>
+                                        <constraint firstAttribute="bottom" secondItem="IEF-fi-oYz" secondAttribute="bottom" constant="25" id="EcJ-hi-i3a"/>
                                         <constraint firstItem="IEF-fi-oYz" firstAttribute="top" secondItem="nAo-Ay-Vvr" secondAttribute="bottom" constant="8" id="JMt-Vi-eMx"/>
                                         <constraint firstItem="nAo-Ay-Vvr" firstAttribute="centerY" secondItem="vBK-Ti-DyB" secondAttribute="centerY" id="ONA-bS-hxJ"/>
                                         <constraint firstAttribute="trailing" secondItem="IEF-fi-oYz" secondAttribute="trailing" constant="8" id="SW8-81-W3a"/>
@@ -160,7 +160,7 @@ The creation, performance, significance, and even the definition of music vary a
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="top" secondItem="QPJ-k8-6NV" secondAttribute="top" id="0Hd-pF-iSi"/>
-                            <constraint firstItem="5vT-zG-4FA" firstAttribute="bottom" secondItem="ldM-gC-Zr8" secondAttribute="bottom" id="46g-0p-NWC"/>
+                            <constraint firstAttribute="bottom" secondItem="ldM-gC-Zr8" secondAttribute="bottom" id="46g-0p-NWC"/>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="bottom" secondItem="ldM-gC-Zr8" secondAttribute="bottom" id="7DR-xt-kiY"/>
                             <constraint firstItem="ldM-gC-Zr8" firstAttribute="leading" secondItem="5vT-zG-4FA" secondAttribute="leading" id="9TG-P8-4fi"/>
                             <constraint firstItem="QPJ-k8-6NV" firstAttribute="leading" secondItem="5vT-zG-4FA" secondAttribute="leading" id="Abc-iT-QQ8"/>
@@ -170,7 +170,7 @@ The creation, performance, significance, and even the definition of music vary a
                             <constraint firstItem="QPJ-k8-6NV" firstAttribute="top" secondItem="5vT-zG-4FA" secondAttribute="top" id="P2m-GU-l0F"/>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="trailing" secondItem="QPJ-k8-6NV" secondAttribute="trailing" id="QOo-zY-BTf"/>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="trailing" secondItem="ldM-gC-Zr8" secondAttribute="trailing" id="V6v-e5-ARs"/>
-                            <constraint firstItem="5vT-zG-4FA" firstAttribute="bottom" secondItem="QPJ-k8-6NV" secondAttribute="bottom" id="YYR-H2-pja"/>
+                            <constraint firstAttribute="bottom" secondItem="QPJ-k8-6NV" secondAttribute="bottom" id="YYR-H2-pja"/>
                             <constraint firstItem="ldM-gC-Zr8" firstAttribute="leading" secondItem="5vT-zG-4FA" secondAttribute="leading" id="agC-RX-sdm"/>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="top" secondItem="ldM-gC-Zr8" secondAttribute="top" id="i8p-53-AKX"/>
                             <constraint firstItem="5vT-zG-4FA" firstAttribute="trailing" secondItem="ldM-gC-Zr8" secondAttribute="trailing" id="lOH-m1-Cjg"/>
@@ -237,7 +237,7 @@ The creation, performance, significance, and even the definition of music vary a
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="53a-uy-cFQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oN3-Rv-rxi">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

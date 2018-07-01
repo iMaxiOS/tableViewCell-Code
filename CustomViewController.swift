@@ -9,14 +9,17 @@
 import UIKit
 
 class CustomViewController: UIViewController {
-
+    
+    var details = DetailsTableViewCell()
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       method()
+        
+        imageView.image = details.mainImageView.image
+        method()
     }
     
     func method() {
@@ -26,5 +29,5 @@ class CustomViewController: UIViewController {
         imageView.contentMode = .scaleAspectFill
     }
     
-
+    
 }
